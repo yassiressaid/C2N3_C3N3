@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Test</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../Design/Assets/png/logo__sante.png" alt="">
+        </div>
+        <nav class="fa-nav">
+            <ul>
+            <li><a href="conseils.html">Conseil</a></li>
+            <li><a class="co-Acceil" href="index.html">Accueil</a></li>
+            <li><a class="fa fa-globe" href="">عربي<img src="../../Design/Assets/png/lang-icon.png" width="10%"></a></li>
+            </ul>
+        </nav>
+    </header>
+  <!-- section Informations -->
+  <div class="Sd">
+    <h4>La dernirère info médicale</h4>
+    <p>La prise d'anti-inflammatoires(ibuprofène,cortisone...)pourrait être un facteur <br><br> 
+      d'aggravation de l’infection.En cas de fièvre,prenez du paracétamol. <br><br> 
+      N'arrêtez pas votre traitement! Consultez votre médecin ou votre pharmacien.</p>
+  </div>
+        
+    </section>
+
+    <!-- --------------------------------------------test----------------------------------------------------- -->
+
+    <section>
+        <div class="line">
+            <div class="line__inform">
+                <div class="line__bigcercle">
+                    <div class="line__smallcercle active">
+                    </div>
+                </div>
+                <div class="text">
+                    <p data-fr> Information </p>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="line__bigcercle">
+                    <div class="line__smallcercle active1">
+                    </div>
+                </div>
+                <div class="text">
+                    <p data-fr> Questionnaire </p>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="line__bigcercle">
+                    <div class="line__smallcercle active2">
+                    </div>
+                </div>
+                <div class="text">
+                    <p data-fr> Résultats </p>
+                </div>
+            </div>
+        </div>
+
+        </section>
+
+        <section id="preambule" style="display: block">
+            <div class="preamb">
+                <h1 class="preamb__title" data-fr>Préambule</h1>
+                <p class="preamb__info" data-fr>« L’application est fournie à titre gratuit, en l’état, uniquement à des fins
+                    d’information pour contribuer à fluidifier la prise en charge des personnes par les services
+                    d’urgences
+                    pendant l’épidémie de Coronavirus COVID-19. L’exhaustivité, l’exactitude, le caractère à jour des
+                    informations et contenus mis à disposition dans cette application, ou leur adéquation à des
+                    finalités
+                    particulières, ne sont pas garantis.</p>
+                <div class="preamb__line"></div>
+                <p class="preamb__info--seco" data-fr> L’utilisation de l’application et de son contenu ne remplace en aucun cas
+                    le
+                    conseil nécessaire donné
+                    par votre médecin ou votre pharmacien ou tout autre professionnel de santé compétent dans chaque cas
+                    particulier. Tout examen ou décision de l’utilisateur doit être réalisé ou prise de manière autonome
+                    sur
+                    la base de l’information scientifique et clinique pertinente, de la notice officielle du produit
+                    concerné le cas échéant et en cas de doute, en consultant un médecin compétent. </p>
+            </div>
+
+            <div class="startb">
+                <button class="startb__btn" id="btn_1">Demarer le test</button>
+            </div>
+
+        </section>
+
+        <!----------------------------------question 1 -----------------------------------------  -->
+
+        <section id="question_1" style="display: none;">
+            <div class="conta">
+                <div class="questions">
+                    <div class="progress">
+                        <div class="progress-done" > 
+                        </div>
+                      </div> 
+
+
+            
+                 <!--    <div class="question_1">
+                        <h1>Pensez-vous avoir eu de la fièvre ces derniers jours <br> (frissons, sueurs)?</h1>
+                    </div>
+                    <div class="radio_G">
+                        <div class="option">
+                            <input type="radio" id="check1" name="check" />
+                            <label for="check1"> OUI</label>
+
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="check2" name="check" />
+                            <label for="check2"> NON</label>
+
+                        </div>
+
+                    </div>
+                </div>  -->
+
+
+                <div id='container'>
+                    <div id='title'>
+                        
+                    </div>
+                       <br/>
+                      <div id='quiz'></div>
+                   <!--   <div class="age"> <input id="age" type="number" name="" id="" min="1" max="100" > ans</div>
+                     -->
+                   
+                    <!-- <button class='' id='next'>Next</a></button>
+                    <button class='' id='prev'>Prev</a></button>
+                    <button class='' id='start'> Start Over</a></button> -->
+                </div>
+                
+                
+                
+                        <div class="btns">
+                            <div class="btn-return return"><button>question d'avant</button></div>
+                            <div class="btn2_next"><button>question suivante</button></div>
+                            <div class='button' id='start'> <a href='#'>Start Over</a></div>
+                
+                        </div>
+                    
+
+
+                <div class="consei">
+                    <p>La prise d'anti-inflammatoires (ibuprofène, cortisone ...) pourrait être un facteur d'aggravation
+                        de
+                        l’infection. En cas de fièvre, prenez du paracétamol. Cette remarque concerte les traitements
+                        par
+                        gélules ou comprimés et ne concerne pas les formes inhalées. Si vous êtes déjà sous traitement,
+                        n'arrêtez pas ce traitement, demandez l'avis de votre médecin ou de votre pharmacien. </p>
+                </div>
+               
+              </div>
+            </div>
+
+        </section> 
+
+     <!----------------------------------question 2 -----------------------------------------  
+     <section id="question_2" style="display: none;">-->
+        <!-- -----------------------------------------------------question__2--------------------------------------- -->
+        <!--   <div id="question__2" style="display: block;">-->
+      <!--   <div class="conta">
+            <div class="questions">
+                <div class="question_1">
+                    <h1>Que pensez-vous de votre corps? test-2</h1>
+                </div>
+                <div class="choix">
+                <div class="radio_G">
+                    <div class="option">
+                        <input type="radio" id="check3" name="check" />
+                        <label for="check3"> fatigue</label>
+
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="check4" name="check" />
+                        <label for="check4"> trop fatgue</label>
+
+                    </div>
+
+                </div>
+                <div class="radio_G">
+                    <div class="option">
+                        <input type="radio" id="check5" name="check" />
+                        <label for="check5"> moyen</label>
+
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="check6" name="check" />
+                        <label for="check6"> Bien</label>
+
+                    </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>-->
+   <!-- -----------------------------------------------------question__3--------------------------------------- -->
+   <!--<div id="question__3" style="display: none;">
+    <div class="conta">
+        <div class="questions">
+            <div class="question_1">
+                <h1>Que pensez-vous de votre corps? test-3</h1>
+            </div>
+            <div class="choix">
+            <div class="radio_G">
+                <div class="option">
+                    <input type="radio" id="check3" name="check" />
+                    <label for="check3"> fatigue</label>
+
+                </div>
+                <div class="option">
+                    <input type="radio" id="check4" name="check" />
+                    <label for="check4"> trop fatgue</label>
+
+                </div>
+
+            </div>
+           
+      </div>
+    </div>
+</div>
+</div>-->
+<!-- -----------------------------------------------------question__4--------------------------------------- -->
+ <!--<div id="question__4" style="display: none;">
+    <div class="conta">
+        <div class="questions">
+            <div class="question_1">
+                <h1>Que pensez-vous de votre corps?test-4</h1>
+            </div>
+            <div class="choix">
+            <div class="radio_G">
+                <div class="option">
+                    <input type="radio" id="check3" name="check" />
+                    <label for="check3"> test</label>
+
+                </div>
+                <div class="option">
+                    <input type="radio" id="check4" name="check" />
+                    <label for="check4"> test</label>
+
+                </div>
+
+            </div>
+           
+      </div>
+    </div>
+</div>
+</div>-->
+<!-- -----------------------------------------------------question__5--------------------------------------- -->
+<!--
+<div id="question__5" style="display: none;">
+    <div class="conta">
+        <div class="questions">
+            <div class="question_1">
+                <h1>Que pensez-vous de votre corps? test-5</h1>
+            </div>
+            <div class="choix">
+            <div class="radio_G">
+                <div class="option">
+                    <input type="radio" id="check3" name="check" />
+                    <label for="check3"> test</label>
+
+                </div>
+                <div class="option">
+                    <input type="radio" id="check4" name="check" />
+                    <label for="check4"> test</label>
+
+                </div>
+
+            </div>
+           
+      </div>
+    </div>
+</div>
+</div>
+
+    </section>-->
+
+        
+
+     <!-- -----------------------------------------------------Recommandations--------------------------------------- -->
+ 
+     <div class="section3">
+        <div class="titre">
+            <h1>Recommandations officielles</h1>
+        </div>
+        <div class="compte">
+            <div class="item1">
+    
+                <ul>
+                    <li class="item1--block">Si vous pensez être malade,</li>
+                    <li>évitez les endroits publics. </li>
+                    <li>Ne rendez pas visite aux personnes fragiles. </li>
+                    <li>Évitez de sortir de chez vous.  </li>
+                    <li>Respectez les mesures barrière (lavage de main, masque).</li>
+                    <li>Surveillez vos symptômes, l’évolution de votre température </li>
+                    <li>corporelle et recherchez un avis médical. </li>
+                </ul>
+    
+    
+            </div>
+            <div class="item2">
+                <h3>Apple Gratuit</h3>
+                <button>080 100 47 47 </button>
+                <a href="_blanc">www.sante.gov.ma</a>
+    
+    
+            </div>
+        </div>
+    
+    </div>
+    
+    <!-- Section HeroFooter -->
+        <section class="heroFooter">
+            <h3 class="heroFooter__title">Vous pensez avoir été exposé au Coronavirus
+                    COVID-19 et vous avez des symptômes ?</h3>
+            <div >
+                <img class="heroFooter__emoji" src="../../Design/Assets/png/1f637.png" alt="emoji">
+            </div>
+            <a href="test.html"><button class="heroFooter__button">Demarer le test</button></a>
+        </section>
+    <!-- Footer -->
+        <footer>
+            <img src="../../Design/Assets/png/logo__sante.png" alt="">
+        </div>
+        <div class="footer__container">
+            <nav class="footer-nav">
+                <ul>
+                <li><a class="fa fa-globe" href="">عربي<img src="../../Design/Assets/png/lang-icon.png" width="10%"></a></li>    
+                <li><a class="co-Acceil" href="">Accueil</a></li>
+                <li><a href="">Conseil</a></li>
+                </ul>
+            </nav>
+            <div class="contact">
+                <h1>Contacts utiles</h1><br>
+                <h2>Chiffre économique "Alo épidémie vigilance"</h2><br>
+                <h2 class="numero">080 100 47 47</h2><br>
+                <h3>Aide médicale urgente</h3><br>
+                <h2 class="numero">114</h2>
+            </div>
+            <div class="info">Algorithme d'orientation mis à jour sur les recommandations en vigueur<br><br>
+                au 22/03/2020 à 16h15. Ce site d’information n’est pas un dispositif médical,<br><br>
+                il ne délivre pas d’avis médical. Projet solidaire d'urgence,financé par l’Alliance<br><br>
+                Digitale contre le COVID-19 : @maladiecovid19
+            </div>    
+        </div>
+        <div class="bottom-bar"></div>
+        </footer>    
+
+        <!-- -------------------------------------------------------HEROFOOTER------------------------------------------ -->
+
+
+
+        <script src="js/test.js"></script>
+
+
+
+
+
+</body>
+
+</html>

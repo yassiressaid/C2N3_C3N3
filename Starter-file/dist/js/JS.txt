@@ -1,0 +1,156 @@
+Abdessamad
+-------------------------------------
+var facMaj=0;
+var facMin=0;
+var facPronost=0;
+// var fievre = prompt("Pensez-vous avoir eu de la fièvre ces derniers jours (frissons, sueurs)" );
+// var temp = prompt("qu'il est ton température");
+// if(fievre==='oui'){
+
+//     if(temp>=37.8 && temp<=38.9){
+//         facMin+=1;
+//     }else (temp>= 39  temp<=35.4  temp === ''){
+//         facMaj+=1;
+//         document.write("d");
+//     }
+// }
+if (fievre==='oui'){
+    facMaj++;
+    console.log(facMaj);
+}
+Mohamed--------------------
+let symptoms = {
+        fever: false,
+        toux: false,
+        courbatures: false,
+        gorge: false,
+        diarrhee: false
+    }
+
+data = {
+        answers : [],
+        gravityFa: {
+            gravity:0,
+            minor:0,
+            major:0
+        },
+        pronostique: 0,
+        age: 0,
+        temp:0
+    }
+
+
+
+
+Imad--------------------------------
+var facMaj=0;
+var facMin=0;
+var facPronost=0;
+var fievre = prompt("Pensez-vous avoir eu de la fièvre ces derniers jours (frissons, sueurs)" );
+var temp = prompt("qu'il est ton température");
+if(fievre==='oui'){
+
+    if(temp>=37.8 && temp<=38.9)
+        facMin+=1;
+    else (temp>= 39  temp<=35.4  temp === '' )
+        facMaj+=1;
+        document.write("d " + facMaj);
+
+}
+// if (fievre==='oui'){
+//     facMaj += 2;
+//     console.log(facMaj);
+// }
+
+mouhssine------------------
+<section class="test">
+        <div>
+             <div class="question"></div>
+             <span>oui <input name="choix" value="choix1" type="radio"></span>
+             <span>Non<input name="choix" value="choix2" type="radio"></span>
+        </div>
+        <button id="next">suivant</button>
+        <button id="before">précédent</button>
+    </section>
+
+</body>
+</html>
+var Qst1 = document.querySelector(".question") ;
+var text = document.createTextNode("Pensez-vous avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?");
+var text2 = document.createTextNode("Si oui : quelle est votre température ?");
+Qst1.appendChild(text);
+var radios = document.getElementsByTagName('input');
+var value;
+for (var i = 0; i < radios.length; i++) {
+    if (radios[i].type === 'radio' && radios[i].checked) {
+        // get value, set checked flag or do whatever you need to
+        value = radios[i].value;
+    }
+}
+  function tester(f) { 
+    if (f.choix[1].checked) {
+
+    } else if ( f.choix[2].checked) {
+
+    }}
+khadija------------------------------
+var Qst1 = document.querySelector(".question") ;
+  var text = document.createTextNode("Pensez-vous avoir eu de la fièvre ces derniers jours (frissons, sueurs) ?");
+  var text2 = "Quelle est votre température ?";
+  Qst1.appendChild(text);
+
+  var radios = document.getElementsByTagName('input');
+  var value;
+
+    function tester(f) { 
+      if (f.choix[1].checked) {
+
+      } else if ( f.choix[2].checked) {
+
+      }}
+
+      function buttonNext (f){
+          var input1 = document.querySelector("#in1");
+           if (input1.checked) {
+               Qst1.innerHTML=text2
+               document.getElementById('nadifi').style.display='none';
+            var crinput = document.createElement('input');
+            crinput.type='number';
+            var nadifi = document.getElementById('nadifi');
+            nadifi.appendChild(crinput);
+
+
+
+           }
+      }
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>test</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section class="test">
+        <div>
+             <div class="question"></div>
+              <div id="wafaa">
+                <div id="nadifi">
+                    <span class="span1">oui <input id=in1 name="choix" value="choix1" type="radio"></span>
+                    <span class="span1">Non<input id=in2 name="choix" value="choix2" type="radio"></span>
+                </div>
+              </div>
+        </div>
+        <button onclick="buttonNext()" id="next">suivant</button>
+        <button id="before">précédent</button>
+
+    </section>
+
+
+
+<script src="js.js"></script>
+</body>
+</html>
