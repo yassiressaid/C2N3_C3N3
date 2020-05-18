@@ -1,7 +1,7 @@
 
 
        
-// Switch btw Arabic & Francais
+// button demarer le test
             let btn_1 = document.querySelector("#btn_1");
             let preamble = document.querySelector("#preambule");
             let quest1 = document.querySelector("#question_1");
@@ -141,14 +141,14 @@
   
   // Click handler for the 'next' button
   $('.btn2_next').on('click', function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     
 
     
     // Suspend click listener during fade animation
-    if(quiz.is(':animated')) {        
-      return false;
-    }
+    // if(quiz.is(':animated')) {        
+    //   return false;
+    // }
     choose();
     algo();
     
@@ -207,12 +207,12 @@
   });
   
   // Animates buttons on hover
-  $('.button').on('mouseenter', function () {
-    $(this).addClass('active');
-  });
-  $('.button').on('mouseleave', function () {
-    $(this).removeClass('active');
-  });
+  // $('.button').on('mouseenter', function () {
+  //   $(this).addClass('active');
+  // });
+  // $('.button').on('mouseleave', function () {
+  //   $(this).removeClass('active');
+  // });
   
   // Creates and returns the div that contains the questions and 
   // the answer selections
